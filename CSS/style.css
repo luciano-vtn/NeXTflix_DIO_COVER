@@ -1,0 +1,133 @@
+/* VARIAVEIS DE AMBIENTE */
+:root{
+    --red:#e50914;
+    --black:#141414;
+    --blue:#065197;
+    --ligBlue:rgb(127, 198, 245);
+    --darBlue:rgb(19, 4, 71);
+    --graRed:linear-gradient(rgba(119, 3, 3, 0.5),rgba(19, 16, 0, 0.5)50%);
+    --graGrey:linear-gradient(rgba(70, 68, 68, 0.5),rgba(87, 82, 56, 0.5)100%);
+}
+
+/* INICIO PADRÃO */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUNDO BASE */
+body{
+    background: var(--black);
+    font-family:'Times New Roman', Times, serif;
+    color: #AAA;
+
+}
+
+header .container { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5px;   
+
+}
+
+
+header .logo {
+    color: var(--red);
+    font-family: "Arial Black", "Times";
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color:#AAA;
+    margin-right:20px;
+}
+
+header nav a:hover{
+    color:#FFF;
+    font-size: 16px;
+}
+
+/* FILME PRINCIPAL NA TELA*/
+
+.titleFilme{
+    font-size: 40px;
+    color:#d4d1d1f5;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif */
+}
+
+.sinopse{
+    font-size: 30px;
+    color: var(--ligBlue);
+}
+
+.filmePrincipal{
+    font-size:10%;
+    background: linear-gradient(rgba(61, 60, 60, 0.5),rgba(10, 0, 0, 0.5)100%),url(/resource/image/interfMandaGro.jpg);
+    padding-left: 10px;
+
+    height: 540px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.filmePrincipal .container{
+    width: 60%;
+}
+
+
+.container .descriptionSinopse{
+    color: white;
+    font-size: 20px;
+    margin-bottom:15px;   
+}
+
+
+.botao{
+    background: var(--graGrey);
+    border: none;
+    color: rgb(241, 198, 7);
+    font-size: 18px;
+
+    margin-right: 10px;
+    padding: 12px 20px 10px;
+    
+    transition: .2s ease all;   
+}
+.botao:hover {
+    background: var(--graRed);
+    border-radius:6px;
+    cursor: pointer;
+    color: rgba(247, 242, 242, 0.925);
+}
+
+/* ICON PLAY */
+#play {
+    color:#e50914;
+    padding-right: 5px;
+}
+
+/* ICON INFO */
+#info {
+    color:#141414;
+    padding: 5px;
+}
+/* ----------------------------------------------------------------- */
+
+/* CSS DO CAROUSEL */
+
+.box-filmes{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
